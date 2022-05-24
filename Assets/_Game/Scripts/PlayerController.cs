@@ -4,10 +4,10 @@ using UnityEngine.Serialization;
 
 namespace Core
 {
-    public class PlayerRacket : MonoBehaviour
+    public class PlayerController : MonoBehaviour
     {
+        [SerializeField] private Racket racket;
         [SerializeField] private float speed = 1;
-        [SerializeField] private Rigidbody2D visualRb;
         
         private float axis;
 
@@ -24,12 +24,12 @@ namespace Core
 
         private void Accelerate()
         {
-            visualRb.velocity = Vector3.right * (Mathf.Sign(axis) * speed * Time.deltaTime);
+            racket.Velocity = Vector3.right * (Mathf.Sign(axis) * speed * Time.deltaTime);
         }
 
         private void Decelerate()
         {
-            visualRb.velocity = Vector2.zero;
+            racket.Velocity = Vector2.zero;
         }
     }
 }

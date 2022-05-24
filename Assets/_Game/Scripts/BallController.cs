@@ -34,7 +34,7 @@ namespace Core
 
         private void FixedUpdate()
         {
-            ballRb.velocity = ballRb.velocity.normalized * moveSpeed;
+            // ballRb.velocity = ballRb.velocity.normalized * moveSpeed;
         }
 
         
