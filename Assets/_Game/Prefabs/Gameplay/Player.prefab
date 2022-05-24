@@ -9,7 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7460183418827936333}
-  m_Layer: 7
+  - component: {fileID: 4638726969040159949}
+  m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31,6 +32,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4638726969040159949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7460183418827936332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e3b8c54ba9249f3a70d1ebd2b85ebbe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2500
+  visualRb: {fileID: 7460183418341215711}
 --- !u!1001 &4247292153449422234
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -95,5 +110,10 @@ PrefabInstance:
 --- !u!4 &7460183418341215705 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6734725318798790723, guid: ae8fb53efef99df49b23f16b58e57cf4, type: 3}
+  m_PrefabInstance: {fileID: 4247292153449422234}
+  m_PrefabAsset: {fileID: 0}
+--- !u!50 &7460183418341215711 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 6734725318798790725, guid: ae8fb53efef99df49b23f16b58e57cf4, type: 3}
   m_PrefabInstance: {fileID: 4247292153449422234}
   m_PrefabAsset: {fileID: 0}
