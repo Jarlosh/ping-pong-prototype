@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7460183418827936333}
   - component: {fileID: 4638726969040159949}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57,10 +57,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Racket
       objectReference: {fileID: 0}
-    - target: {fileID: 6734725318798790722, guid: ae8fb53efef99df49b23f16b58e57cf4, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 16bf817d3b7440049b370e1152d61b4c, type: 2}
+    - target: {fileID: 6734725318798790721, guid: ae8fb53efef99df49b23f16b58e57cf4, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6734725318798790723, guid: ae8fb53efef99df49b23f16b58e57cf4, type: 3}
       propertyPath: m_RootOrder
       value: 0
