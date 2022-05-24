@@ -136,3 +136,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ballRb: {fileID: 4677755520606816863}
   moveSpeed: 10
+  racketLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  goalLayer:
+    serializedVersion: 2
+    m_Bits: 128
