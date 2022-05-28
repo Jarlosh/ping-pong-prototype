@@ -14,7 +14,8 @@ namespace Core
         [SerializeField] private LayerMask goalLayer;
 
         public Vector2 Position => ballRb.position;
-        
+        public Vector3 Velocity => ballRb.velocity;
+
         private void Start()
         {
             SetMoveDirection(PickStartDirection());
@@ -22,7 +23,8 @@ namespace Core
 
         private Vector2 PickStartDirection()
         {
-            var x = JRandom.CoinFlip() ? 1 : -1;
+            // var x = JRandom.CoinFlip() ? 1 : -1;
+            var x = 0;
             var y = JRandom.CoinFlip() ? 1 : -1;
             return new Vector2(x, y);
         }
@@ -31,13 +33,6 @@ namespace Core
         {
             ballRb.velocity = direction.normalized * moveSpeed;
         }
-
-        private void FixedUpdate()
-        {
-            // ballRb.velocity = ballRb.velocity.normalized * moveSpeed;
-        }
-
-        
         
         private void OnCollisionEnter2D(Collision2D other)
         {

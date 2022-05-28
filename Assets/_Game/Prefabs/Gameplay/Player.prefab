@@ -10,6 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7460183418827936333}
   - component: {fileID: 4638726969040159949}
+  - component: {fileID: 7796611930758675469}
+  - component: {fileID: 5062340054059018868}
+  - component: {fileID: 6798709045425310158}
   m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
@@ -44,8 +47,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e3b8c54ba9249f3a70d1ebd2b85ebbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  axis: {fileID: 7796611930758675469}
   racket: {fileID: 6990946088174788516}
-  speed: 2500
+  moveSpeed: 1
+--- !u!114 &7796611930758675469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7460183418827936332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 179eddba66594ce4bba3d7ca2edd9300, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _value: 0
+  _sensivity: 3
+  _dead: 0.01
+--- !u!114 &5062340054059018868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7460183418827936332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6db0216d87414bad808e251545984779, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  viewportPoint: {x: 0.5, y: 0.05}
+--- !u!114 &6798709045425310158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7460183418827936332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d456448765e4494c86d187b9f5ad7274, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  localViewportSize: {x: 0.125, y: 0.025}
 --- !u!1001 &4247292153449422234
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -56,10 +101,6 @@ PrefabInstance:
     - target: {fileID: 6734725318798790721, guid: ae8fb53efef99df49b23f16b58e57cf4, type: 3}
       propertyPath: m_Name
       value: Racket
-      objectReference: {fileID: 0}
-    - target: {fileID: 6734725318798790721, guid: ae8fb53efef99df49b23f16b58e57cf4, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6734725318798790723, guid: ae8fb53efef99df49b23f16b58e57cf4, type: 3}
       propertyPath: m_RootOrder
@@ -105,7 +146,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8699981364990502500, guid: ae8fb53efef99df49b23f16b58e57cf4, type: 3}
+      propertyPath: inputInputAxis
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 8699981364990502500, guid: ae8fb53efef99df49b23f16b58e57cf4, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ae8fb53efef99df49b23f16b58e57cf4, type: 3}
 --- !u!4 &7460183418341215705 stripped
 Transform:

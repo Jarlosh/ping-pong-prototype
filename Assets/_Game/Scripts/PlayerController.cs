@@ -6,30 +6,27 @@ namespace Core
 {
     public class PlayerController : MonoBehaviour
     {
+        [SerializeField] private InputAxis axis;
         [SerializeField] private Racket racket;
-        [SerializeField] private float speed = 1;
+        [SerializeField] private float moveSpeed = 1;
         
-        private float axis;
-
         private void Update()
         {
-            axis = Input.GetAxis("Horizontal");
+            UpdateInput();
+            racket.SetVelocity(axis.Value, moveSpeed * ViewportManager.WorldWidth);
+        }
+
+        private void UpdateInput()
+        {
+            var leftPressed = Input.GetKey(KeyCode.A); 
+            var rightPressed = Input.GetKey(KeyCode.D);
             
-            // ok due axis threshold
-            if (axis != 0) 
-                Accelerate();
+            if (leftPressed && !rightPressed)
+                axis.State = AxisState.Negative;
+            else if (rightPressed && !leftPressed)
+                axis.State = AxisState.Positive;
             else
-                Decelerate();
-        }
-
-        private void Accelerate()
-        {
-            racket.Velocity = Vector3.right * (Mathf.Sign(axis) * speed * Time.deltaTime);
-        }
-
-        private void Decelerate()
-        {
-            racket.Velocity = Vector2.zero;
+                axis.State = AxisState.Neutral;
         }
     }
 }
