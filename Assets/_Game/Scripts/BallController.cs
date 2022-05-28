@@ -16,8 +16,11 @@ namespace Core
         public Vector2 Position => ballRb.position;
         public Vector3 Velocity => ballRb.velocity;
 
-        private void Start()
+        public event Action OnGoalEvent;
+        
+        public void Reset()
         {
+            ballRb.position = Vector2.zero;
             SetMoveDirection(PickStartDirection());
         }
 
@@ -45,8 +48,7 @@ namespace Core
 
         private void OnGoal()
         {
-            ballRb.position = Vector2.zero;
-            Start();
+            OnGoalEvent?.Invoke();
         }
 
         private void RacketBounce(Collision2D collision)
