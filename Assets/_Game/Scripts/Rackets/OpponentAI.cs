@@ -6,7 +6,7 @@ namespace Core
     public class OpponentAI : MonoBehaviour
     {
         [SerializeField] private InputAxis inputAxis;
-        [SerializeField] private BallController ball;
+        [SerializeField] private BallMovement ball;
         [SerializeField] private Racket racket;
         [SerializeField] private float viewPortAccuracy;
         [SerializeField] private float moveSpeed = 1;
