@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 4677755520606816861}
   - component: {fileID: 4677755520606816863}
   - component: {fileID: 4677755520606816856}
+  - component: {fileID: 5324565633167163307}
+  - component: {fileID: 1472513477548611313}
   m_Layer: 0
   m_Name: BallVisual
   m_TagString: Untagged
@@ -121,3 +123,35 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!114 &5324565633167163307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4677755520606816860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcb104db2ba544cf9b381e0e328caca2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  racketLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  goalLayer:
+    serializedVersion: 2
+    m_Bits: 128
+--- !u!114 &1472513477548611313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4677755520606816860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b80bb29c8dd4e8187dba51f1b72ab86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scaleTransform: {fileID: 4677755520606816862}
+  renderer: {fileID: 4677755520606816861}

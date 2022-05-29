@@ -7,8 +7,8 @@ namespace Core
     {
         [SerializeField] private Rigidbody2D ballRb;
         [SerializeField] private BallCollider collider;
-        [SerializeField] private float moveSpeed;
-        
+        private BallMoveConfig config;
+
         public Vector2 Position => ballRb.position;
         public Vector3 Velocity => ballRb.velocity;
 
@@ -22,6 +22,11 @@ namespace Core
             collider.OnRacketCollisionEvent -= RacketBounce;
         }
 
+        public void SetConfig(BallMoveConfig config)
+        {
+            this.config = config;
+        }
+        
         public void Reset()
         {
             ballRb.position = Vector2.zero;
@@ -29,7 +34,7 @@ namespace Core
         
         public void SetMoveDirection(Vector2 direction)
         {
-            ballRb.velocity = direction.normalized * moveSpeed;
+            ballRb.velocity = direction.normalized * config.MoveSpeed;
         }
         
         private void RacketBounce(Collision2D collision)

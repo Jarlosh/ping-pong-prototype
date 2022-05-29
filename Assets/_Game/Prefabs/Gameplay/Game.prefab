@@ -78,6 +78,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ball: {fileID: 7420620437064120156}
+  configProviderData: {fileID: 11400000, guid: 59c573d6a7c0e6f428869c79d3d14377, type: 2}
 --- !u!1001 &3355331363908058857
 PrefabInstance:
   m_ObjectHideFlags: 0

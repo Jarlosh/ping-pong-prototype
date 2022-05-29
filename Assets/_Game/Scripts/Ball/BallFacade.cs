@@ -6,8 +6,9 @@ using Random = UnityEngine.Random;
 
 namespace Core
 {
-    public class BallController : MonoBehaviour
+    public class BallFacade : MonoBehaviour
     {
+        [SerializeField] private BallVisual visual;
         [SerializeField] private BallMovement movement;
         [SerializeField] private BallCollider collider;
         
@@ -21,6 +22,12 @@ namespace Core
         private void OnDestroy()
         {
             collider.OnGoalCollisionEvent -= OnGoal;
+        }
+
+        public void SetConfig(BallConfig config)
+        {
+            visual.SetConfig(config);
+            movement.SetConfig(config.moveConfig);
         }
 
         private void OnGoal()

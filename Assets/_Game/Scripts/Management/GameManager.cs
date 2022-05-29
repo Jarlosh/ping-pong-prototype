@@ -5,13 +5,15 @@ namespace Core.Management
 {
     public class GameManager : MonoBehaviour
     {
-        [SerializeField] private BallController ball;
+        [SerializeField] private BallFacade ball;
+        [SerializeField] private ConfigProviderData configProviderData;
 
         private void Start()
         {
             ball.OnGoalEvent += OnGoal;
 
             InitGame();
+            StartGame();
         }
 
         private void OnDestroy()
@@ -21,12 +23,18 @@ namespace Core.Management
 
         private void InitGame()
         {
+        }
+
+        private void StartGame()
+        {
+            var config = configProviderData.PickConfig();
+            ball.SetConfig(config);
             ball.Reset();
         }
 
         private void OnGoal()
         {
-            ball.Reset();
+            StartGame();
         }
     }
 }

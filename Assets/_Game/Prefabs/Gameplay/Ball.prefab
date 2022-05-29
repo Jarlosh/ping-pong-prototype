@@ -45,8 +45,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31aef99ae22c97741b80cdc25a3bdd2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  visual: {fileID: 8782647120973319575}
   movement: {fileID: 1662792809686834532}
-  collider: {fileID: 5324565633167163307}
+  collider: {fileID: 2623900977091323085}
 --- !u!114 &1662792809686834532
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60,8 +61,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ballRb: {fileID: 3271840864239751481}
-  collider: {fileID: 5324565633167163307}
-  moveSpeed: 10
+  collider: {fileID: 2623900977091323085}
 --- !u!1001 &7894053901513153382
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -119,11 +119,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5dd01e093ccb9a04b9a76fc6cb17bbc3, type: 3}
---- !u!1 &3271840864239751482 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4677755520606816860, guid: 5dd01e093ccb9a04b9a76fc6cb17bbc3, type: 3}
-  m_PrefabInstance: {fileID: 7894053901513153382}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3271840864239751480 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4677755520606816862, guid: 5dd01e093ccb9a04b9a76fc6cb17bbc3, type: 3}
@@ -134,21 +129,25 @@ Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 4677755520606816863, guid: 5dd01e093ccb9a04b9a76fc6cb17bbc3, type: 3}
   m_PrefabInstance: {fileID: 7894053901513153382}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &5324565633167163307
+--- !u!114 &2623900977091323085 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 5324565633167163307, guid: 5dd01e093ccb9a04b9a76fc6cb17bbc3, type: 3}
+  m_PrefabInstance: {fileID: 7894053901513153382}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3271840864239751482}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fcb104db2ba544cf9b381e0e328caca2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  racketLayer:
-    serializedVersion: 2
-    m_Bits: 64
-  goalLayer:
-    serializedVersion: 2
-    m_Bits: 128
+--- !u!114 &8782647120973319575 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1472513477548611313, guid: 5dd01e093ccb9a04b9a76fc6cb17bbc3, type: 3}
+  m_PrefabInstance: {fileID: 7894053901513153382}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b80bb29c8dd4e8187dba51f1b72ab86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
