@@ -7,7 +7,9 @@ namespace Core
     {
         [SerializeField] private Rigidbody2D ballRb;
         [SerializeField] private BallCollider collider;
+        [SerializeField, Range(0, 5)] private float speedIncreasePerBounce;
         private BallMoveConfig config;
+        private int bounces;
 
         public Vector2 Position => ballRb.position;
         public Vector3 Velocity => ballRb.velocity;
@@ -30,15 +32,18 @@ namespace Core
         public void Reset()
         {
             ballRb.position = Vector2.zero;
+            ballRb.velocity = Vector2.zero;
+            bounces = 0;
         }
         
         public void SetMoveDirection(Vector2 direction)
         {
-            ballRb.velocity = direction.normalized * config.MoveSpeed;
+            ballRb.velocity = direction.normalized * (config.MoveSpeed + bounces * speedIncreasePerBounce);
         }
         
         private void RacketBounce(Collision2D collision)
         {
+            bounces++;
             var dx = collision.contacts[0].point.x - collision.gameObject.transform.position.x;
             var width = collision.collider.bounds.size.x;
 

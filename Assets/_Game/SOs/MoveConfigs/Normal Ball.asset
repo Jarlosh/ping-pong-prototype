@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Normal Ball
   m_EditorClassIdentifier: 
   moveSpeed: 10
-  size: 0.33333334
+  size: 0.375

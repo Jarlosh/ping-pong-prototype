@@ -62,6 +62,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ballRb: {fileID: 3271840864239751481}
   collider: {fileID: 2623900977091323085}
+  speedIncreasePerBounce: 0.5
 --- !u!1001 &7894053901513153382
 PrefabInstance:
   m_ObjectHideFlags: 0

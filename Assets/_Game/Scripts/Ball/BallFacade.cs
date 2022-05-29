@@ -39,7 +39,8 @@ namespace Core
         public void Reset()
         {
             movement.Reset();
-            movement.SetMoveDirection(PickStartDirection());
+            CoroutineHelpers.DoAfter(this, 1f, () 
+                => movement.SetMoveDirection(PickStartDirection()));
         }
 
         private Vector2 PickStartDirection()
