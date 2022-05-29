@@ -12,7 +12,6 @@ namespace Core.Management
         [SerializeField] private IntPlayerPrefItem colorPlayerPrefItem;
         
         [SerializeField] private WeightedPicker<BallMoveConfig> moveConfigPicker;
-        [SerializeField] private Color baseColor = Color.green;
 
         public BallConfig PickConfig()
         {
@@ -26,7 +25,6 @@ namespace Core.Management
         private Color GetColor()
         {
             return colorOptions.Options[colorPlayerPrefItem.Value];
-            return baseColor;
         }
     }
 }

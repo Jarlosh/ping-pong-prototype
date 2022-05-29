@@ -1,5 +1,6 @@
 using System;
 using System.Linq;
+using Scoring;
 using Tools;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -12,7 +13,7 @@ namespace Core
         [SerializeField] private BallMovement movement;
         [SerializeField] private BallCollider collider;
         
-        public event Action OnGoalEvent;
+        public event Action<GoalGate> OnGoalEvent;
 
         private void Start()
         {
@@ -30,9 +31,9 @@ namespace Core
             movement.SetConfig(config.moveConfig);
         }
 
-        private void OnGoal()
+        private void OnGoal(GoalGate goalGate)
         {
-            OnGoalEvent?.Invoke();
+            OnGoalEvent?.Invoke(goalGate);
         }
 
         public void Reset()

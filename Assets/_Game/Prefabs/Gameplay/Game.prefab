@@ -44,6 +44,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9185629252151271434}
   - component: {fileID: 1895349747188635791}
+  - component: {fileID: 4280088234313339959}
   m_Layer: 0
   m_Name: Logic
   m_TagString: Untagged
@@ -78,7 +79,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ball: {fileID: 7420620437064120156}
+  score: {fileID: 4280088234313339959}
   configProviderData: {fileID: 11400000, guid: 59c573d6a7c0e6f428869c79d3d14377, type: 2}
+--- !u!114 &4280088234313339959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5172398881354614587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e34bab4ef7f4235b64ed148a48bc76a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bestScoreSave:
+    stringItem: {fileID: 11400000, guid: 4604cd5a525e2a146a3b038cc4f36005, type: 2}
 --- !u!1001 &3355331363908058857
 PrefabInstance:
   m_ObjectHideFlags: 0
