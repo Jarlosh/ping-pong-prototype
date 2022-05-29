@@ -318,9 +318,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8257317446985858401}
     m_Modifications:
+    - target: {fileID: 463070574934592832, guid: ba1ad3e44206ea646a85fcaa31fde611, type: 3}
+      propertyPath: m_FlexibleWidth
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1627971488923466671, guid: ba1ad3e44206ea646a85fcaa31fde611, type: 3}
       propertyPath: m_Name
       value: Score right
+      objectReference: {fileID: 0}
+    - target: {fileID: 2020473480460357764, guid: ba1ad3e44206ea646a85fcaa31fde611, type: 3}
+      propertyPath: m_fontSize
+      value: 71.05
       objectReference: {fileID: 0}
     - target: {fileID: 4259993941375327519, guid: ba1ad3e44206ea646a85fcaa31fde611, type: 3}
       propertyPath: m_Pivot.x
@@ -420,9 +428,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8257317446985858401}
     m_Modifications:
+    - target: {fileID: 463070574934592832, guid: ba1ad3e44206ea646a85fcaa31fde611, type: 3}
+      propertyPath: m_FlexibleWidth
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1627971488923466671, guid: ba1ad3e44206ea646a85fcaa31fde611, type: 3}
       propertyPath: m_Name
       value: Score left
+      objectReference: {fileID: 0}
+    - target: {fileID: 2020473480460357764, guid: ba1ad3e44206ea646a85fcaa31fde611, type: 3}
+      propertyPath: m_fontSize
+      value: 71.05
       objectReference: {fileID: 0}
     - target: {fileID: 4259993941375327519, guid: ba1ad3e44206ea646a85fcaa31fde611, type: 3}
       propertyPath: m_Pivot.x
