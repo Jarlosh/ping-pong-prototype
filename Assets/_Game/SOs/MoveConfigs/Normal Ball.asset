@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8573ed64871f4d6fadeeb20a51b075d4, type: 3}
   m_Name: Normal Ball
   m_EditorClassIdentifier: 
-  moveSpeed: 10
+  moveSpeed: 7.5
   size: 0.375
