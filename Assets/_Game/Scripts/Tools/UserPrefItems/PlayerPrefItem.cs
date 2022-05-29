@@ -20,5 +20,10 @@ namespace _Game.Scripts.UI
         protected abstract void SetValue(T value);
 
         protected abstract T GetValue();
+        
+        public bool HasKey()
+        {
+            return PlayerPrefs.HasKey(key);
+        }
     }
 }

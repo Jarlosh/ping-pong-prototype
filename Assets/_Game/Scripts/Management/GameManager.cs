@@ -1,4 +1,5 @@
 using System;
+using Scoring;
 using UnityEngine;
 
 namespace Core.Management
@@ -6,6 +7,7 @@ namespace Core.Management
     public class GameManager : MonoBehaviour
     {
         [SerializeField] private BallFacade ball;
+        [SerializeField] private ScoreManager score;
         [SerializeField] private ConfigProviderData configProviderData;
 
         private void Start()
@@ -32,8 +34,9 @@ namespace Core.Management
             ball.Reset();
         }
 
-        private void OnGoal()
+        private void OnGoal(GoalGate goalGate)
         {
+            score.AddScore(goalGate.IsPlayerSide);
             StartGame();
         }
     }
