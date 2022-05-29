@@ -10,6 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7884580479549910504}
   - component: {fileID: 1620679118900085671}
+  - component: {fileID: 4522248573350435196}
+  - component: {fileID: 1959025858721186325}
+  - component: {fileID: 5143113590021443483}
   m_Layer: 6
   m_Name: Opponent
   m_TagString: Untagged
@@ -44,9 +47,52 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aaffb55984364141bc6c7d2510661341, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  racket: {fileID: 2003225096856605110}
+  inputAxis: {fileID: 4522248573350435196}
   ball: {fileID: 0}
-  moveSpeed: 1000
+  racket: {fileID: 2003225096856605110}
+  viewPortAccuracy: 0.025
+  moveSpeed: 0.5
+--- !u!114 &4522248573350435196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7884580479549910505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 179eddba66594ce4bba3d7ca2edd9300, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _value: 0
+  _sensivity: 1
+  _dead: 0.01
+--- !u!114 &1959025858721186325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7884580479549910505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d456448765e4494c86d187b9f5ad7274, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  localViewportSize: {x: 0.125, y: 0.025}
+--- !u!114 &5143113590021443483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7884580479549910505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6db0216d87414bad808e251545984779, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  viewportPoint: {x: 0.5, y: 0.95}
 --- !u!1001 &4627834837853639560
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -109,6 +155,10 @@ PrefabInstance:
     - target: {fileID: 6734725318798790723, guid: ae8fb53efef99df49b23f16b58e57cf4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8699981364990502500, guid: ae8fb53efef99df49b23f16b58e57cf4, type: 3}
+      propertyPath: moveSpeed
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ae8fb53efef99df49b23f16b58e57cf4, type: 3}
