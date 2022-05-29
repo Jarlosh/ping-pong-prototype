@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0dee7a1d1c574d918f337263ffd72fc1, type: 3}
-  m_Name: Selected color
+  m_Name: Selected color save
   m_EditorClassIdentifier: 
   key: SelectedColorIndex
   defaultValue: 0
