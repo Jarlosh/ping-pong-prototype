@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f184684711dd4b5295407eb725f13a02, type: 3}
   m_Name: BallConfigProvider
   m_EditorClassIdentifier: 
+  colorOptions: {fileID: 11400000, guid: 7043098f27f0f8645922d4f8676ad667, type: 2}
+  colorPlayerPrefItem: {fileID: 11400000, guid: 89a7cc3737a6adc4ba4493dd2868679e, type: 2}
   moveConfigPicker:
     options:
     - <Item>k__BackingField: {fileID: 11400000, guid: 34b494d11eaaadd4f8cb84727135cb5d, type: 2}
