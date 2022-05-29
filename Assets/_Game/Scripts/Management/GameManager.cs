@@ -10,6 +10,11 @@ namespace Core.Management
         [SerializeField] private ScoreManager score;
         [SerializeField] private ConfigProviderData configProviderData;
 
+        private void Awake()
+        {
+            Screen.orientation = ScreenOrientation.Landscape;
+        }
+
         private void Start()
         {
             ball.OnGoalEvent += OnGoal;

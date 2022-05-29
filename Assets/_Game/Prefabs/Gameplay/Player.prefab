@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7460183418827936333}
   - component: {fileID: 4638726969040159949}
+  - component: {fileID: 4418074262109604050}
   - component: {fileID: 7796611930758675469}
   - component: {fileID: 5062340054059018868}
   - component: {fileID: 6798709045425310158}
@@ -50,6 +51,19 @@ MonoBehaviour:
   axis: {fileID: 7796611930758675469}
   racket: {fileID: 6990946088174788516}
   moveSpeed: 1
+--- !u!114 &4418074262109604050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7460183418827936332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae0ce736cbc74ba193cd477a30e2027e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  axis: {fileID: 7796611930758675469}
 --- !u!114 &7796611930758675469
 MonoBehaviour:
   m_ObjectHideFlags: 0
