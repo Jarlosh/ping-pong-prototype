@@ -1,3 +1,4 @@
+using Crystal;
 using UnityEngine;
 
 namespace Core
@@ -29,7 +30,27 @@ namespace Core
         
         public static Vector2 ViewportToScreen(Vector2 viewportPoint)
         {
-            return new Vector2(viewportPoint.x * Screen.width, viewportPoint.y * Screen.height);
+            var viewPort = GetSafeViewport();
+            var x = (viewportPoint.x * viewPort.width + viewPort.x) * Screen.width; 
+            var y = (viewportPoint.y * viewPort.height + viewPort.y) * Screen.height; 
+            return new Vector2(x, y);
+        }
+
+        //todo: cache it
+        private static Rect GetSafeViewport()
+        {
+            var safeArea = GetSafeArea();
+            var viewPort = new Rect(safeArea);
+            viewPort.x /= Screen.width;
+            viewPort.y /= Screen.height;
+            viewPort.width /= Screen.width;
+            viewPort.height /= Screen.height;
+            return viewPort;
+        }
+
+        private static Rect GetSafeArea()
+        {
+            return SafeAreaHelper.GetSafeArea();
         }
     }
 }
