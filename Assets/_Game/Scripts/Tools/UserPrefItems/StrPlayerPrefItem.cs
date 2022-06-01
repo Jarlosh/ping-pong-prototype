@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace _Game.Scripts.UI
+namespace Tools.UserPrefItems
 {
     [CreateAssetMenu(menuName = "SO/Prefs/StrPlayerPrefItem", fileName = "StrPlayerPrefItem", order = 0)]
     public class StrPlayerPrefItem : PlayerPrefItem<string>

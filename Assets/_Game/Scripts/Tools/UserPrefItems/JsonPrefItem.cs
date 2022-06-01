@@ -2,7 +2,7 @@ using System;
 using Newtonsoft.Json;
 using UnityEngine;
 
-namespace _Game.Scripts.UI
+namespace Tools.UserPrefItems
 {
     [Serializable]
     public class JsonPrefItem<T>

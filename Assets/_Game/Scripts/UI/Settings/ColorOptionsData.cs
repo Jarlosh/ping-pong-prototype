@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace _Game.Scripts.UI
+namespace UI.Settings
 {
     [CreateAssetMenu(menuName = "SO/ColorOptionsData", fileName = "ColorOptionsData", order = 0)]
     public class ColorOptionsData : ScriptableObject

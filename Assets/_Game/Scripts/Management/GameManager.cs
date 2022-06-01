@@ -1,8 +1,8 @@
-using System;
-using Scoring;
+using Core.Ball;
+using Meta.Scoring;
 using UnityEngine;
 
-namespace Core.Management
+namespace Management
 {
     public class GameManager : MonoBehaviour
     {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-namespace _Game.Scripts.UI
+namespace UI.Settings.ColorSelectViews
 {
     public class ColorOptionsContainer : MonoBehaviour
     {

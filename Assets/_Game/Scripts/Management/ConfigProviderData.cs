@@ -1,9 +1,9 @@
-using System;
-using _Game.Scripts.UI;
-using Tools;
+using Core.Ball;
+using Tools.UserPrefItems;
+using UI.Settings;
 using UnityEngine;
 
-namespace Core.Management
+namespace Management
 {
     [CreateAssetMenu(menuName = "SO/BallConfigProvider", fileName = "BallConfigProvider", order = 0)]
     public class ConfigProviderData : ScriptableObject

@@ -1,13 +1,13 @@
 using UnityEngine;
 
-namespace Core
+namespace Core.Rackets.Input
 {
     public class KeyboardInput : IPlayerInput
     {
         public AxisState GetAxisState()
         {
-            var leftPressed = Input.GetKey(KeyCode.A); 
-            var rightPressed = Input.GetKey(KeyCode.D);
+            var leftPressed = UnityEngine.Input.GetKey(KeyCode.A); 
+            var rightPressed = UnityEngine.Input.GetKey(KeyCode.D);
             
             if (leftPressed && !rightPressed)
                 return AxisState.Negative;

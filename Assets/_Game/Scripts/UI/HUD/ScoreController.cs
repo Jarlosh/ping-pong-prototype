@@ -1,8 +1,8 @@
 using System;
-using Scoring;
+using Meta.Scoring;
 using UnityEngine;
 
-namespace _Game.Scripts.UI.HUD
+namespace UI.HUD
 {
     public class ScoreController : MonoBehaviour
     {

@@ -1,8 +1,7 @@
-using System;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace _Game.Scripts.UI
+namespace UI.Settings
 {
     public class SettingsController : MonoBehaviour
     {

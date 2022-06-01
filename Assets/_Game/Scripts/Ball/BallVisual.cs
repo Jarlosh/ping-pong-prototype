@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Core
+namespace Core.Ball
 {
     public class BallVisual : MonoBehaviour
     {

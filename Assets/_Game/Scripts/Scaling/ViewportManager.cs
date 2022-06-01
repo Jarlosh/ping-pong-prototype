@@ -1,7 +1,7 @@
 using Crystal;
 using UnityEngine;
 
-namespace Core
+namespace Tools.Scaling
 {
     public class ViewportManager
     {

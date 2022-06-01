@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace _Game.Scripts.UI
+namespace Tools.UserPrefItems
 {
     public abstract class PlayerPrefItem<T> : ScriptableObject
     {

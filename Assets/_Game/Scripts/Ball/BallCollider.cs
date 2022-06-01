@@ -1,9 +1,9 @@
 using System;
-using Scoring;
+using Meta.Scoring;
 using Tools;
 using UnityEngine;
 
-namespace Core
+namespace Core.Ball
 {
     public class BallCollider : MonoBehaviour
     {
