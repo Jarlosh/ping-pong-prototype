@@ -1,11 +1,9 @@
 using System;
-using System.Linq;
-using Scoring;
+using Meta.Scoring;
 using Tools;
 using UnityEngine;
-using Random = UnityEngine.Random;
 
-namespace Core
+namespace Core.Ball
 {
     public class BallFacade : MonoBehaviour
     {

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Core
+namespace Core.Rackets.Input
 {
     public enum AxisState
     {

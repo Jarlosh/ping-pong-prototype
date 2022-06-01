@@ -1,8 +1,8 @@
-using System.Collections.Generic;
 using System.Linq;
+using Tools.UserPrefItems;
 using UnityEngine;
 
-namespace _Game.Scripts.UI
+namespace UI.Settings.ColorSelectViews
 {
     public class ColorSelectionPresenter : MonoBehaviour
     {

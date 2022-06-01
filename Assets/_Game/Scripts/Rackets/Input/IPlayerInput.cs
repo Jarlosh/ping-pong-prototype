@@ -1,4 +1,4 @@
-namespace Core
+namespace Core.Rackets.Input
 {
     public interface IPlayerInput
     {

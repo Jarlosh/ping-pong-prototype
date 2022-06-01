@@ -1,7 +1,9 @@
-using System;
+using Core.Ball;
+using Tools.Scaling;
+using Core.Rackets.Input;
 using UnityEngine;
 
-namespace Core
+namespace Core.Rackets
 {
     public class OpponentAI : MonoBehaviour
     {

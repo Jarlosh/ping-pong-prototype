@@ -1,6 +1,7 @@
+using Core.Rackets.Input;
 using UnityEngine;
 
-namespace Core
+namespace Core.Rackets
 {
     public class PlayerInput : MonoBehaviour
     {

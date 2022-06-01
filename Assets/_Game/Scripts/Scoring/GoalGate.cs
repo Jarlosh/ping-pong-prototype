@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Scoring
+namespace Meta.Scoring
 {
     public class GoalGate : MonoBehaviour
     {

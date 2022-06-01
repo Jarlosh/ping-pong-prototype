@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace _Game.Scripts.UI
+namespace UI.Settings.ColorSelectViews
 {
     public interface IColorSettingsModel
     {

@@ -1,8 +1,8 @@
-using System;
+using Tools.Scaling;
+using Core.Rackets.Input;
 using UnityEngine;
-using UnityEngine.Serialization;
 
-namespace Core
+namespace Core.Rackets
 {
     public class PlayerController : MonoBehaviour
     {

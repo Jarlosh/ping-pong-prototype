@@ -1,8 +1,8 @@
-using Scoring;
+using Meta.Scoring;
 using TMPro;
 using UnityEngine;
 
-namespace _Game.Scripts.UI.HUD
+namespace UI.HUD
 {
     public class ScoreView : MonoBehaviour
     {

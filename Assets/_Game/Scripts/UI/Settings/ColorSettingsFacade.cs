@@ -1,8 +1,10 @@
 using System;
 using System.Collections.Generic;
+using Tools.UserPrefItems;
+using UI.Settings.ColorSelectViews;
 using UnityEngine;
 
-namespace _Game.Scripts.UI
+namespace UI.Settings
 {
     public class ColorSettingsFacade : IColorSettingsModel
     {

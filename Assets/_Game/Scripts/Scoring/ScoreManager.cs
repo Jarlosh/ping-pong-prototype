@@ -1,8 +1,8 @@
 using System;
-using _Game.Scripts.UI;
+using Tools.UserPrefItems;
 using UnityEngine;
 
-namespace Scoring
+namespace Meta.Scoring
 {
     public struct Score
     {

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Core
+namespace Core.Rackets
 {
     public class Racket : MonoBehaviour
     {

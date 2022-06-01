@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Core
+namespace Core.Ball
 {
     [CreateAssetMenu(menuName = "SO/BallMoveConfig", fileName = "BallMoveConfig", order = 0)]
     public class BallMoveConfig : ScriptableObject
